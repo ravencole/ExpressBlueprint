@@ -28,7 +28,7 @@ const middleware = require('./middleware')(app),
 /* Routes */
 app.use('/user', require('../routes/userRouter')());
 
-app.get('/', (req, res) => res.send("HA!"));
+app.get('/', (req, res) => res.send(PORT));
 /* Error Handling */
 require('./errorHandling')(app);
 
